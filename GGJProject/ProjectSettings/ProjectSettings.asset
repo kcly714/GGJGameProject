@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 78b616cf3d6099a43a5c9a29e93b8614
+  productGUID: 38de114facbaa984da73a529406726ab
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: GGJProject
+  productName: GGJGameProject
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -611,10 +611,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 9e64b336-bb95-4a59-bb98-35781e64c4ac
+  cloudProjectId: e2f6d183-f328-4e8b-81cf-1fbe584ed281
   framebufferDepthMemorylessMode: 0
-  projectName: GGJProject
-  organizationId: respici0
+  projectName: GGJGameProject
+  organizationId: kcly
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
