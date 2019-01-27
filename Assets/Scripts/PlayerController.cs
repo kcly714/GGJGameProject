@@ -4,27 +4,68 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 18;
 
+    public Transform playerCam, character, centerPoint;
 
-    // Start is called before the first frame update
+    private float mouseX, mouseY;
+    public float mouseSensitivity = 10f;
+    public float mouseYPosition = 5;
+
+    private float moveFB, moveLR;
+    public float moveSpeed = 25f;
+
+    private float zoom;
+    public float zoomSpeed = 2;
+
+    public float zoomMin = -2f;
+    public float zoomMax = -10f;
+
+    public float rotationSpeed = 15;
+
+    // Use this for initialization
     void Start()
     {
-
+        zoom = -7;
     }
 
     // Update is called once per frame
     void Update()
     {
-    
-        //if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
-        //{
-        //    transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
-        //}
 
-        //if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
-        //{
-        //    transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
-        //}
+        zoom += Input.GetAxis ("Mouse ScrollWheel") * zoomSpeed;
+
+        if (zoom > zoomMin)
+            zoom = zoomMin;
+
+        if (zoom < zoomMax)
+            zoom = zoomMax;
+
+        playerCam.transform.localPosition = new Vector3(0, 0, zoom);
+
+        if (Input.GetMouseButton(1))
+        {
+            mouseX += Input.GetAxis("Mouse X");
+            mouseY -= Input.GetAxis("Mouse Y");
+        }
+
+        mouseY = Mathf.Clamp(mouseY, -60f, 60f);
+        playerCam.LookAt (centerPoint);
+        centerPoint.localRotation = Quaternion.Euler(mouseY, mouseX, 0);
+
+        moveFB = Input.GetAxis ("Vertical") * moveSpeed;
+        moveLR = Input.GetAxis ("Horizontal") * moveSpeed;
+
+        Vector3 movement = new Vector3(moveLR, 0, moveFB);
+        movement = character.rotation * movement;
+
+        character.GetComponent<CharacterController>().Move (movement * Time.deltaTime);
+        centerPoint.position = new Vector3 (character.position.x, character.position.y + mouseYPosition, character.position.z);
+
+        if (Input.GetAxis ("Vertical") > 0 | Input.GetAxis ("Vertical") < 0)
+        {
+            Quaternion turnAngle = Quaternion.Euler (0, centerPoint.eulerAngles.y, 0);
+
+            character.rotation = Quaternion.Slerp (character.rotation, turnAngle, Time.deltaTime * rotationSpeed);
+        }
     }
 }
