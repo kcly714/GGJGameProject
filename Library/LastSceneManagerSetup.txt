@@ -1,7 +1,4 @@
 sceneSetups:
-- path: Assets/Collision - Copy.unity
-  isLoaded: 0
-  isActive: 0
 - path: Assets/Scenes/HomeScene.unity
   isLoaded: 0
   isActive: 0

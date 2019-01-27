@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public float mouseYPosition = 5;
 
     private float moveFB, moveLR;
-    public float moveSpeed = 25f;
+    public float moveSpeed = 50f;
 
     private float zoom;
     public float zoomSpeed = 2;
