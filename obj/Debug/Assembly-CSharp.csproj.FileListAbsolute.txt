@@ -275,6 +275,7 @@ C:\GGJGameProject\Temp\bin\Debug\UnityEngine.Timeline.xml
 C:\GGJGameProject\Temp\bin\Debug\UnityEngine.Networking.xml
 C:\GGJGameProject\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
 C:\GGJGameProject\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\GGJGameProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
 C:\GGJGameProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
 C:\GGJGameProject\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\GGJGameProject\obj\Debug\Assembly-CSharp.dll
