@@ -5,6 +5,8 @@ Keep in mind that my team and I are web developers, not game developers. We want
 
 You can find the code in scripts file. Where I was responsible for the character movement and sprite animation. We used C# and unity for the creation of this game.
 
+Character Movement Code [HERE](https://github.com/respici0/GGJGameProject/blob/master/Assets/Scripts/PlayerController.cs) feel free to use this in your unity project for character movement.
+
 # A taste of home
 You can download and test out the working version [here](https://globalgamejam.org/2019/games/taste-home-0). Download is at the bottom of the linked page.
 
