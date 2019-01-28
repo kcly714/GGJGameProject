@@ -6,7 +6,7 @@ Keep in mind that my team and I are web developers, not game developers. We want
 You can find the code in scripts file. Where I was responsible for the character movement and sprite animation. We used C# and unity for the creation of this game.
 
 # A taste of home
-[Taste of home](https://globalgamejam.org/2019/games/taste-home-0) you can download and test out the working version here
+You can download and test out the working version [here](https://globalgamejam.org/2019/games/taste-home-0). Download is at the bottom of the linked page.
 
 You are a spirit that are visiting people who are starting a new life in a new city and they are home sick and you have the ability to roam through their house. The objective is to look at objects in the person's house to get a better understanding of who they are. Once you have a full understanding of the person, you will make a dish that gives the person a taste of their "home".
 
