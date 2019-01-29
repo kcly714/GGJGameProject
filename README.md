@@ -23,9 +23,9 @@ Option to create the dish will not be available until the spirit interacts with 
 Interacting with each object will add some color to the room. Creating each dish will increase the brightness of the room.
 Same point in all three apartment's kitchens to create dishes
 
-# Movement
+# Movement/Controls
 
-Movement: WASD
+Movement: WASD (up, down, left, and right)
 
 Camera: Hold right mouse button and drag around
 
