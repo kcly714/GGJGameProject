@@ -26,5 +26,7 @@ Same point in all three apartment's kitchens to create dishes
 # Movement
 
 Movement: WASD
+
 Camera: Hold right mouse button and drag around
+
 Zoom: Mouse Scroll-Wheel
